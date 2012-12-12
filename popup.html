@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="AngularChromeEx" ng-csp>
+    <head>
+        <link rel="stylesheet" href="css/popup.css">
+
+        <!--<script src="js/lib/jquery-1.8.2.min.js"></script>-->
+        <script src="js/lib/angular.min.js"></script>
+
+        <script src="js/app/app.js"></script>
+        <script src="js/app/popup.js"></script>
+    </head>
+    <body id="popup">
+        <header>
+            <h1>AngularJS + Chrome Extension</h1>
+        </header>
+
+        <div ng-controller="PageController">
+            <div>{{message}}</div>
+            <h2>Page:</h2>
+            <div>{{title}}</div>
+            <div>{{url}}</div>
+            <h2>Has Links:</h2>
+            <ul>
+                <li ng-repeat="pageInfo in pageInfos">
+                    <div>{{pageInfo.url}}</div>
+                </li>                       
+            </ul>
+        </div>
+    </body>
+</html>

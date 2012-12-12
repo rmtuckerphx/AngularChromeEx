@@ -1,0 +1,16 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+#popup {
+  min-width: 500px;
+  width: 500px;
+  min-height: 10px;
+  height: 300px;
+  margin: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
